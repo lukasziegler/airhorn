@@ -1,0 +1,100 @@
+@require "reset.styl"
+@require "rupture"
+rupture.scale = 0 640px 1024px 1300px
+rupture.scale-names = 'mobile' 'tablet' 'desktop' 'desktop+'
+
+// general mixins
+content-container(padding = 15px)
+  max-width 1200px
+  margin 0 auto
+  padding 0 padding
+
+grid(ratio, gutter = 20px)
+  width 'calc((99.99% + %s) * %s - %s)' % (gutter ratio gutter)
+
+// base variables
+red = #db0a40
+paleBlue = #f1f7f7
+sharkGrey = #27272b
+maxWidthContent = 1000px
+
+// base styles
+body
+  font-family Boston,'Helvetica Neue',Helvetica,Arial,sans-serif
+  overflow-y scroll
+  -webkit-overflow-scrolling touch
+
+p
+  font-weight 300
+
+a
+  &
+  &:visited
+  &:hover
+  &:focus
+  &:active
+    color sharkGrey
+    font-weight 700
+    text-decoration none
+  &:hover
+    text-decoration underline
+
+// layout
+body
+  display block
+  +above('desktop')
+    display flex
+
+.header
+  //position fixed
+  //top 0
+  //left 0
+  //bottom 0
+  display flex
+  justify-content center
+  align-items center
+  flex-direction column
+  background-color red
+  color white
+  +above('desktop')
+    grid(1/2)
+  +above('desktop+')
+    grid(2/5)
+
+.profile
+  background-color white
+  width 100px
+  height 100px
+  border-radius 50px
+  +above('tablet')
+    width 150px
+    height 150px
+    border-radius 75px
+  +above('desktop')
+    width 200px
+    height 200px
+    border-radius 100px
+
+.teaser
+  padding-top 40px
+
+.credits
+  font-size 13.5px
+  padding-top 20px
+
+.content
+  background linear-gradient(to top, white, gray)
+  +above('tablet')
+    grid(1/2)
+    height 100%
+  +above('desktop')
+    grid(3/5)
+
+// card stuff
+.card
+  background-color white
+  border 3px solid red
+  min-height 150px
+  margin 0 20px 20px 20px
+  +above('tablet')
+    grid(1/2)
