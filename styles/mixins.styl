@@ -1,0 +1,16 @@
+content-container(padding = 15px)
+  max-width 1200px
+  margin 0 auto
+  padding 0 padding
+
+cardSize(width, aspectRatio = 1.5)
+  height = width / aspectRatio
+  height unit(height, px)
+  width unit(width, px)
+
+grid(ratio, gutter = 20px)
+  width 'calc((99.99% + %s) * %s - %s)' % (gutter ratio gutter)
+leftColumn(ratio, gutter = 20px)
+  width 'calc((99.99% + %s) * %s - %s)' % (gutter ratio gutter)
+rightColumn(ratio, gutter = 20px)
+  width 'calc((99.99% + %s) * %s)' % (gutter ratio)

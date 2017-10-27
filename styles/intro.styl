@@ -1,0 +1,44 @@
+.header
+  padding normalPading smallPadding
+  display flex
+  justify-content center
+  align-items center
+  flex-direction column
+  background-color red
+  color white
+  +above('desktop')
+    padding 0
+    leftColumn(1/2)
+    position fixed
+    top 0
+    left 0
+    bottom 0
+  +above('desktop+')
+    leftColumn(2/5)
+
+.profile
+  background-color white
+  width 100px
+  height 100px
+  border-radius 50px
+  +above('tablet')
+    width 150px
+    height 150px
+    border-radius 75px
+  +above('desktop')
+    width 200px
+    height 200px
+    border-radius 100px
+
+.teaser
+  padding-top 16px
+  +above('tablet')
+    padding-top 24px
+  +above('desktop')
+    padding-top 40px
+
+.credits
+  font-size 13.5px
+  padding-top 12px
+  +above('tablet')
+    padding-top 20px

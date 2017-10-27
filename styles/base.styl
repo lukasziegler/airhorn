@@ -1,0 +1,25 @@
+body
+  font-family Boston,'Helvetica Neue',Helvetica,Arial,sans-serif
+  overflow-y scroll
+  -webkit-overflow-scrolling touch
+
+p
+  font-weight 300
+
+a
+  &
+  &:visited
+  &:hover
+  &:focus
+  &:active
+    color sharkGrey
+    font-weight 700
+    text-decoration none
+  &:hover
+    text-decoration underline
+
+// layout
+body
+  display block
+  +above('desktop')
+    display flex

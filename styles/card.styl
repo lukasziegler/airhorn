@@ -1,0 +1,52 @@
+.card
+  position relative
+  background-color white
+  border 3px solid red
+  cursor pointer
+
+  // card sizing
+  cardSize(280)
+  +above('tablet')
+    cardSize(240)
+  +above('desktop')
+    cardSize(300)
+  +above('desktop+')
+    cardSize(280)
+
+  // card padding
+  margin 0 0 smallPadding 0
+  &:last-child
+    margin 0
+  +above('tablet')
+    margin 0 0 normalPading 0
+    &:nth-child(2n+1)
+      margin 0 0 normalPading normalPading
+  +at('desktop')
+    margin 0 0 smallPadding 0
+    &:nth-child(2n+1)
+      margin 0 0 smallPadding smallPadding
+
+  &__overlay
+    position absolute
+    top 0
+    left 0
+    bottom 0
+    right 0
+    display flex
+    justify-content center
+    align-items center
+    background-color white
+
+    &-title
+      color red
+      text-transform uppercase
+      font-size 28px
+      font-weight 800
+
+  &:hover
+    & .card__overlay
+      display none
+
+  &__giphy
+    pointer-events none
+    overflow hidden
