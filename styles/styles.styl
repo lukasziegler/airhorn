@@ -111,8 +111,12 @@ body
 
 // card stuff
 .card
+  position relative
   background-color white
   border 3px solid red
+  cursor pointer
+
+  // card sizing
   width 100%
   min-height 200px
   +above('tablet')
@@ -124,9 +128,23 @@ body
     margin 0
   +above('tablet')
     margin 0 0 normalPading 0
-    &:nth-child(2n)
+    &:nth-child(2n+1)
       margin 0 0 normalPading normalPading
   +at('desktop')
     margin 0 0 smallPadding 0
-    &:nth-child(2n)
+    &:nth-child(2n+1)
       margin 0 0 smallPadding smallPadding
+
+  &__giphy
+    pointer-events none
+    overflow hidden
+
+  &--cta
+    min-height 100px
+    width 90%
+    display flex
+    justify-content center
+    align-items center
+    font-size 24px
+    font-weight bold
+    color red
