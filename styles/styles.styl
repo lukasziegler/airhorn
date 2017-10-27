@@ -135,6 +135,28 @@ body
     &:nth-child(2n+1)
       margin 0 0 smallPadding smallPadding
 
+  &__overlay
+    position absolute
+    top 0
+    left 0
+    bottom 0
+    right 0
+    display flex
+    justify-content center
+    align-items center
+    background-color white
+
+    &-title
+      color red
+      text-transform uppercase
+      font-size 28px
+      font-weight 800
+
+  &:hover
+    & .card__overlay
+      display none
+
+
   &__giphy
     pointer-events none
     overflow hidden
@@ -148,3 +170,4 @@ body
     font-size 24px
     font-weight bold
     color red
+    cursor default
