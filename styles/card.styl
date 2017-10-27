@@ -1,30 +1,27 @@
+.cards
+  display flex
+  flex-wrap wrap
+  flex-direction row
+  justify-content center
+
 .card
   position relative
   background-color white
   border 3px solid red
   cursor pointer
+  overflow hidden
 
   // card sizing
   cardSize(280)
   +above('tablet')
     cardSize(240)
   +above('desktop')
-    cardSize(300)
+    cardSize(240)
   +above('desktop+')
-    cardSize(280)
+    cardSize(240)
 
   // card padding
-  margin 0 0 smallPadding 0
-  &:last-child
-    margin 0
-  +above('tablet')
-    margin 0 0 normalPading 0
-    &:nth-child(2n+1)
-      margin 0 0 normalPading normalPading
-  +at('desktop')
-    margin 0 0 smallPadding 0
-    &:nth-child(2n+1)
-      margin 0 0 smallPadding smallPadding
+  margin 8px
 
   &__overlay
     position absolute

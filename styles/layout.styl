@@ -1,0 +1,22 @@
+// responsive stuff and so
+@require 'rupture'
+rupture.scale = 0 550px 840px 1040px 1300px
+rupture.scale-names = 'mobile' 'tablet' 'fablet' 'desktop' 'desktop+'
+
+.l-left-column
+  +above('desktop')
+    padding 0
+    grid(2/5)
+    position fixed
+    top 0
+    left 0
+    bottom 0
+
+// right panel
+.l-right-column
+  +above('desktop')
+    grid(3/5)
+    position absolute
+    top 0
+    right 0
+    bottom 0

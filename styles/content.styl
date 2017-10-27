@@ -1,27 +1,16 @@
 .content
-  padding 0 smallPadding
+  padding 0
   display flex
-  flex-wrap wrap
-  flex-direction row
-  justify-content center
-  +above('desktop')
-    padding 0
-    rightColumn(1/2)
-    position absolute
-    top 0
-    right 0
-    bottom 0
-  +above('desktop+')
-    rightColumn(3/5)
+  flex-direction column
 
 .press-me
   height 60px
   width 100%
   display flex
   justify-content center
-  padding 20px 0
+  padding 28px 0 20px 0
   +above('desktop')
     height 100px
-    padding 32px 0
+    padding 40px 0 32px 0
   &__image
     height 100%
