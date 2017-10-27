@@ -1,6 +1,6 @@
 @require "reset.styl"
 @require "rupture"
-rupture.scale = 0 640px 1024px 1300px
+rupture.scale = 0 540px 780px 1300px
 rupture.scale-names = 'mobile' 'tablet' 'desktop' 'desktop+'
 
 // general mixins
@@ -8,6 +8,11 @@ content-container(padding = 15px)
   max-width 1200px
   margin 0 auto
   padding 0 padding
+
+cardSize(width, aspectRatio = 1.5)
+  height = width / aspectRatio
+  height unit(height, px)
+  width unit(width, px)
 
 grid(ratio, gutter = 20px)
   width 'calc((99.99% + %s) * %s - %s)' % (gutter ratio gutter)
@@ -94,13 +99,13 @@ body
     padding-top 20px
 
 .content
-  padding normalPading smallPadding
+  padding 0 smallPadding
   display flex
   flex-wrap wrap
   flex-direction row
   justify-content center
   +above('desktop')
-    padding normalPading 0
+    padding 0
     rightColumn(1/2)
     position absolute
     top 0
@@ -117,10 +122,13 @@ body
   cursor pointer
 
   // card sizing
-  width 100%
-  min-height 200px
+  cardSize(280)
   +above('tablet')
-    width 45%
+    cardSize(240)
+  +above('desktop')
+    cardSize(300)
+  +above('desktop+')
+    cardSize(280)
 
   // card padding
   margin 0 0 smallPadding 0
@@ -161,13 +169,14 @@ body
     pointer-events none
     overflow hidden
 
-  &--cta
-    min-height 100px
-    width 90%
-    display flex
-    justify-content center
-    align-items center
-    font-size 24px
-    font-weight bold
-    color red
-    cursor default
+.press-me
+  height 60px
+  width 100%
+  display flex
+  justify-content center
+  padding 20px 0
+  +above('desktop')
+    height 100px
+    padding 32px 0
+  &__image
+    height 100%
