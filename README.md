@@ -11,7 +11,8 @@ what there is still to do
 - [x] CNAME
 - [x] JS logic (play audio clip for N seconds)
 - [x] show giphy on click
-- [ ] add actual files
+- [x] add actual files
+- [ ] adjust object-fit of giphys (centering)
 - [ ] replace font
 - [ ] add proper JS build process
 - [ ] rebranding of airhorn
