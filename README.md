@@ -9,12 +9,14 @@ what there is still to do
 - [x] split style files
 - [x] change tablet to single-column, and side-by-side view only on desktop
 - [x] CNAME
-- [ ] JS logic (play audio clip for N seconds)
-- [ ] show giphy on click
-- [ ] manifest, meta & theme-color
+- [x] JS logic (play audio clip for N seconds)
+- [x] show giphy on click
+- [ ] add actual files
+- [ ] replace font
+- [ ] add proper JS build process
 - [ ] rebranding of airhorn
+- [ ] manifest, meta & theme-color
 - [ ] favicon
-- [ ] replace font?
 
 
 dependencies from others

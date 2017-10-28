@@ -12,7 +12,7 @@ var reload = browserSync.reload;
 var path = {
   html: '*.html',
   pug: '*.pug',
-  js: 'js/**/*.js',
+  js: 'docs/js/**/*.js',
   stylesWatch: 'styles/**/*.styl',
   stylesInput: 'styles/styles.styl',
   output: 'docs',
@@ -45,6 +45,7 @@ gulp.task('observeFiles', function () {
   gulp.watch(path.stylesWatch, ['styles']);
   gulp.watch(path.pug, ['minify']);
   gulp.watch(path.pug).on('change', reload);
+  gulp.watch(path.js).on('change', reload);
 });
 
 gulp.task('browserSync', function () {
