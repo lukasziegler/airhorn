@@ -12,13 +12,19 @@ what there is still to do
 - [x] JS logic (play audio clip for N seconds)
 - [x] show giphy on click
 - [x] add actual files
-- [ ] adjust object-fit of giphys (centering)
-- [ ] replace font
+- [x] adjust object-fit of giphys (centering)
+- [ ] replace font, add nice typography
+- [ ] add animated DLS infographic (only animate for first 5 seconds, and on hover)
+- [ ] update branding (credits, press-me)
+- [ ] prefetching of audio files (remove delay on mobile usage)
+- [ ] loading indicator for mobile (listen to canplaythrough & ended events)
 - [ ] add proper JS build process
-- [ ] rebranding of airhorn
 - [ ] manifest, meta & theme-color
 - [ ] favicon
 
+more ideas
+
+- [ ] randomization of images
 
 dependencies from others
 
