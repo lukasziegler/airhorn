@@ -15,8 +15,8 @@ what there is still to do
 - [x] adjust object-fit of giphys (centering)
 - [ ] add animated DLS infographic
 - [ ] set timing for DLS animation (5s loop, then on hover)
-- [ ] replace font, add nice typography
 - [ ] update branding (credits, press-me)
+- [ ] replace font, add nice typography
 - [ ] prefetching of audio files (remove delay on mobile usage)
 - [ ] loading indicator for mobile (listen to canplaythrough & ended events)
 - [ ] add proper JS build process
