@@ -13,8 +13,9 @@ what there is still to do
 - [x] show giphy on click
 - [x] add actual files
 - [x] adjust object-fit of giphys (centering)
+- [ ] add animated DLS infographic
+- [ ] set timing for DLS animation (5s loop, then on hover)
 - [ ] replace font, add nice typography
-- [ ] add animated DLS infographic (only animate for first 5 seconds, and on hover)
 - [ ] update branding (credits, press-me)
 - [ ] prefetching of audio files (remove delay on mobile usage)
 - [ ] loading indicator for mobile (listen to canplaythrough & ended events)
