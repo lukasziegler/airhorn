@@ -1,4 +1,17 @@
-function play (id, duration) {
+function play(cardEl, audioEl, duration) {
+    if (audioEl === undefined) {
+        var audioEl = this.audioEl;
+    }
+
+    audioEl.play();
+    cardEl.classList.add('card--show-giphy');
+
+    setTimeout(function () {
+        cardEl.classList.remove('card--show-giphy');
+    }, duration);
+}
+
+function start (id, duration) {
     if (duration === undefined) {
         duration = 3000;
     }
@@ -11,22 +24,15 @@ function play (id, duration) {
     var cardEl = event.currentTarget;
 
     if (audioEl.readyState === 4) {
-        audioEl.play();
-        cardEl.classList.add('card--show-giphy');
+        play(cardEl, audioEl, duration);
     } else {
         cardEl.classList.add('card--loading');
-        audioEl.addEventListener('oncanplay', alert('event listener'));
+        audioEl.addEventListener('oncanplay', function() {
+            play.apply(this);
+        });
     }
-
-
-
-    audioEl.oncanplay = function(event) {
-        console.log('fullyLoaded', event);
-    }
-
-    setTimeout(function () {
-        cardEl.classList.remove('card--show-giphy');
-    }, duration);
 }
 
-// Element fully loaded: event.srcElement.id
+function clipEnd() {
+    console.log('audio clip ended: ', event.srcElement.id)
+}

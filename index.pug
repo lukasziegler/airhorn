@@ -21,89 +21,89 @@ html(lang='en')
         img.press-me__image(src='media/click-400px.gif' srcset='media/click-400px.gif 400w, media/click.gif 963w' width=400 height=75)
 
       .cards
-        .card(onclick="play(1, 2000)")
+        .card(onclick="start(1, 2000)")
           .card__giphy.card__giphy--cover
             img.card__giphy-gif(src="media/airhorn/image.gif")
           .card__overlay
             .card__overlay-title Airhorn
 
-        .card(onclick="play(2, 2000)")
+        .card(onclick="start(2, 2000)")
           .card__giphy.card__giphy--cover
             img.card__giphy-gif(src="media/form-follows-function/image.gif")
           .card__overlay
             .card__overlay-title Form Follows Function
 
-        .card(onclick="play(3, 2850)")
+        .card(onclick="start(3, 2850)")
           .card__giphy
             img.card__giphy-gif(src="media/fuck-off/image.gif")
           .card__overlay
             .card__overlay-title Fuck OFF
 
-        .card(onclick="play(4, 2000)")
+        .card(onclick="start(4, 2000)")
           .card__giphy.card__giphy--cover
             img.card__giphy-gif(src="media/present-your-design/image.gif")
           .card__overlay
             .card__overlay-title Present your design
 
-        .card(onclick="play(5)")
+        .card(onclick="start(5)")
           .card__giphy.card__giphy--center-vertical
             img.card__giphy-gif(src="media/say-whaaat/image.gif")
           .card__overlay
             .card__overlay-title Say Whaaat
 
-        .card(onclick="play(6, 4000)")
+        .card(onclick="start(6, 4000)")
           .card__giphy.card__giphy--center-horizontal
             img.card__giphy-gif(src="media/want-a-beer/image.gif")
           .card__overlay
             .card__overlay-title Want a beer?
 
-        .card(onclick="play(7, 6500)")
+        .card(onclick="start(7, 6500)")
           .card__giphy.card__giphy--cover
             img.card__giphy-gif(src="media/when-you-open-your-suitcase/image.gif")
           .card__overlay
             .card__overlay-title When you open your suitcase
 
-        .card(onclick="play(8, 4500)")
+        .card(onclick="start(8, 4500)")
           .card__giphy.card__giphy--cover
             img.card__giphy-gif(src="media/you-got-mail/image.gif")
           .card__overlay
             .card__overlay-title You got mail
 
-        .card(onclick="play(9, 2200)")
+        .card(onclick="start(9, 2200)")
           .card__giphy
             img.card__giphy-gif(src="media/you-up/image.gif")
           .card__overlay
             .card__overlay-title You up?
 
-        .card(onclick="play()")
+        .card(onclick="start()")
           .card__giphy.card__giphy--iframe
             iframe.card__giphy-gif(src="https://giphy.com/embed/aaQnKy1z8f1S" width="100%" height="100%" frameBorder="0")
           .card__overlay
             .card__overlay-title Rebranding
 
-        .card(onclick="play()")
+        .card(onclick="start()")
           .card__giphy.card__giphy--iframe
             iframe.card__giphy-gif(src="https://giphy.com/embed/Z21HJj2kz9uBG" width="100%" height="100%" frameBorder="0")
           .card__overlay
             .card__overlay-title Love
 
     .audio-samples
-      audio(preload="auto" oncanplaythrough="ready()" onloadeddata="loaded()" oncanplay="log()")#1
+      audio(preload="auto")#1
         source(src="media/airhorn/sound.mp3")
-      audio(preload="auto" oncanplaythrough="ready()" onloadeddata="loaded()")#2
+      audio(preload="auto")#2
         source(src="media/form-follows-function/sound.mp3")
-      audio(preload="auto" oncanplaythrough="ready()" onloadeddata="loaded()")#3
+      audio(preload="auto")#3
         source(src="media/fuck-off/sound.mp3")
-      audio(preload="auto" oncanplaythrough="ready()" onloadeddata="loaded()")#4
+      audio(preload="auto")#4
         source(src="media/present-your-design/sound.mp3")
-      audio(preload="auto" oncanplaythrough="ready()" onloadeddata="loaded()")#5
+      audio(preload="auto")#5
         source(src="media/say-whaaat/sound.mp3")
-      audio(preload="auto" oncanplaythrough="ready()" onloadeddata="loaded()")#6
+      audio(preload="auto")#6
         source(src="media/want-a-beer/sound.mp3")
-      audio(preload="auto" oncanplaythrough="ready()" onloadeddata="loaded()")#7
+      audio(preload="auto")#7
         source(src="media/when-you-open-your-suitcase/sound.mp3")
-      audio(preload="auto" oncanplaythrough="ready()" onloadeddata="loaded()")#8
+      audio(preload="auto")#8
         source(src="media/you-got-mail/sound.mp3")
-      audio(preload="auto" oncanplaythrough="ready()" onloadeddata="loaded()")#9
+      audio(preload="auto")#9
         source(src="media/you-up/sound.mp3")
         
