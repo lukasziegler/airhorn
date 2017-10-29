@@ -1,8 +1,4 @@
 function play(cardEl, audioEl, duration) {
-    if (audioEl === undefined) {
-        var audioEl = this.audioEl;
-    }
-
     audioEl.play();
     cardEl.classList.add('card--show-giphy');
 
@@ -27,9 +23,7 @@ function start (id, duration) {
         play(cardEl, audioEl, duration);
     } else {
         cardEl.classList.add('card--loading');
-        audioEl.addEventListener('oncanplay', function() {
-            play.apply(this);
-        });
+        audioEl.addEventListener('oncanplay', play, false);
     }
 }
 
