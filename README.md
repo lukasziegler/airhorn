@@ -13,22 +13,23 @@ what there is still to do
 - [x] show giphy on click
 - [x] add actual files
 - [x] adjust object-fit of giphys (centering)
-- [ ] add animated DLS infographic
-- [ ] set timing for DLS animation (5s loop, then on hover)
+- [ ] add DLS infographic
+- [ ] (set timing for DLS animation, 5s loop, then on hover)
 - [ ] update branding (credits, press-me)
-- [ ] replace font, add nice typography
-- [ ] prefetching of audio files (remove delay on mobile usage)
-- [ ] loading indicator for mobile (listen to canplaythrough & ended events)
-- [ ] add proper JS build process
-- [ ] manifest, meta & theme-color
+- [ ] replace font, add ~nice~ typography
+- [ ] ~loading indicator for mobile (listen to canplaythrough & ended events)~
 - [ ] favicon
-
-more ideas
-
-- [ ] randomization of images
 
 dependencies from others
 
-- [ ] define font family
+- [x] define font family
 - [ ] finalize text
 - [ ] convert mp3s
+
+more ideas
+
+- [ ] add proper JS build process
+- [ ] migrate to (p)react
+- [ ] randomization of images
+- [ ] prefetching of audio files (remove delay on mobile usage)
+- [ ] manifest, meta & theme-color
