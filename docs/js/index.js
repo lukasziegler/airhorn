@@ -1,12 +1,3 @@
-function play(cardEl, audioEl, duration) {
-    audioEl.play();
-    cardEl.classList.add('card--show-giphy');
-
-    setTimeout(function () {
-        cardEl.classList.remove('card--show-giphy');
-    }, duration);
-}
-
 function start (id, duration) {
     if (duration === undefined) {
         duration = 3000;
@@ -20,10 +11,25 @@ function start (id, duration) {
     var cardEl = event.currentTarget;
 
     if (audioEl.readyState === 4) {
-        play(cardEl, audioEl, duration);
+        play();
     } else {
         cardEl.classList.add('card--loading');
-        audioEl.addEventListener('oncanplay', play, false);
+        audioEl.load();
+        audioEl.addEventListener('canplaythrough', playCallback);
+    }
+
+    function playCallback() {
+        cardEl.classList.remove('card--loading');
+        play();
+    }
+
+    function play() {
+        audioEl.play();
+        cardEl.classList.add('card--show-giphy');
+
+        setTimeout(function () {
+            cardEl.classList.remove('card--show-giphy');
+        }, duration);
     }
 }
 
