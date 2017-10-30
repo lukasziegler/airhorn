@@ -32,4 +32,5 @@ more ideas
 - [ ] migrate to (p)react
 - [ ] randomization of images
 - [ ] prefetching of audio files (remove delay on mobile usage)
+- [ ] send custom analytics
 - [ ] manifest, meta & theme-color

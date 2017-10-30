@@ -4,23 +4,21 @@
   flex-direction column
 
 .press-me
-  display flex
-  justify-content center
   padding 28px 0 20px 0
   width 100%
   height 45px
   +above('tablet')
     height 60px
   +above('desktop')
-    height 100px
+    height 50px
 
   &__image
-    display block
+    margin 0 auto
     width auto
     height 100%
     +above('desktop')
-      width 400px
-      height 75px
+      height 100%
+      width auto
 
 .cards
   display flex

@@ -1,4 +1,4 @@
-.profile
+.header
   padding normalPading smallPadding
   display flex
   justify-content center
@@ -6,6 +6,8 @@
   flex-direction column
   background-color red
   color white
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
 
   &__picture
     background-color white
@@ -21,16 +23,10 @@
       height 200px
       border-radius 100px
 
-.teaser
-  padding-top 16px
-  +above('tablet')
-    padding-top 24px
-  +above('desktop')
-    padding-top 40px
-
-.credits
-  font-size 16px
-  text-align center
-  padding-top 12px
-  +above('tablet')
-    padding-top 20px
+  &__credits
+    font-size 21px
+    font-weight normal
+    text-align center
+    padding-top 12px
+    +above('tablet')
+      padding-top 20px

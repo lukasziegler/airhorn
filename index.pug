@@ -9,18 +9,15 @@ html(lang='en')
     link(rel='stylesheet', href='styles.css')
     script(src='js/index.js')
   body
-    .profile.l-left-column
-      .profile__picture
-      .teaser
-        .teaser__text Airhorn bla bla a
-      span.credits made with ♥ in Salzburg<br>by your team
+    header.header.l-left-column
+      .header__picture
+      .header__credits <a href="https://github.com/lukasziegler/airhorn" target="_blank">made with love</a> in Salzburg<br>by your team
 
-    .content.l-right-column
-
+    main.content.l-right-column
       .press-me
-        img.press-me__image(src='media/click-400px.gif' srcset='media/click-400px.gif 400w, media/click.gif 963w' width=400 height=75)
+        img.press-me__image(src='media/click-400px.gif' srcset='media/click-400px.gif 400w, media/click.gif 963w')
 
-      .cards
+      article.cards
         .card(onclick="play(1, 2000)")
           .card__giphy.card__giphy--cover
             img.card__giphy-gif(src="media/airhorn/image.gif")
