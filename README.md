@@ -13,17 +13,17 @@ what there is still to do
 - [x] show giphy on click
 - [x] add actual files
 - [x] adjust object-fit of giphys (centering)
+- [x] replace font, add ~nice~ typography
+- [x] update branding (credits, press-me)
 - [ ] add DLS infographic
 - [ ] (set timing for DLS animation, 5s loop, then on hover)
-- [ ] update branding (credits, press-me)
-- [ ] replace font, add ~nice~ typography
-- [ ] ~loading indicator for mobile (listen to canplaythrough & ended events)~
+- [ ] loading indicator for mobile (listen to canplaythrough & ended events)
 - [ ] favicon
 
 dependencies from others
 
 - [x] define font family
-- [ ] finalize text
+- [x] finalize text
 - [ ] convert mp3s
 
 more ideas
