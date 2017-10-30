@@ -51,11 +51,23 @@ html(lang='en')
           .card__overlay
             .card__overlay-title Say Whaaat
 
+        .card(onclick="play(16, 6000)")
+          .card__giphy.card__giphy--cover
+            img.card__giphy-gif(src="media/when-someone-farts-in-the-office/image.gif")
+          .card__overlay
+            .card__overlay-title When someone farts in the office
+
         .card(onclick="play(6, 4000)")
           .card__giphy.card__giphy--center-horizontal
             img.card__giphy-gif(src="media/want-a-beer/image.gif")
           .card__overlay
             .card__overlay-title Want a beer?
+
+        .card(onclick="play(11, 3500)")
+          .card__giphy.card__giphy--cover
+            img.card__giphy-gif(src="media/because-i-can/image.gif")
+          .card__overlay
+            .card__overlay-title Because I Can
 
         .card(onclick="play(7, 6500)")
           .card__giphy.card__giphy--cover
@@ -63,11 +75,23 @@ html(lang='en')
           .card__overlay
             .card__overlay-title When you open your suitcase
 
-        .card(onclick="play(8, 4500)")
-          .card__giphy.card__giphy--cover
-            img.card__giphy-gif(src="media/you-got-mail/image.gif")
+        .card(onclick="play(12, 4000)")
+          .card__giphy
+            img.card__giphy-gif(src="media/manager-request/image.gif")
           .card__overlay
-            .card__overlay-title You got mail
+            .card__overlay-title Manager Request
+
+        .card(onclick="play(10, 4000)")
+          .card__giphy
+            img.card__giphy-gif(src="media/manager-fail/image.gif")
+          .card__overlay
+            .card__overlay-title Manager Fail
+
+        .card(onclick="play(13, 2000)")
+          .card__giphy
+            img.card__giphy-gif(src="media/manager-douchebag/image.gif")
+          .card__overlay
+            .card__overlay-title Manager Douchebag
 
         .card(onclick="play(9, 2200)")
           .card__giphy
@@ -75,17 +99,29 @@ html(lang='en')
           .card__overlay
             .card__overlay-title You up?
 
+        .card(onclick="play(8, 4500)")
+          .card__giphy.card__giphy--cover
+            img.card__giphy-gif(src="media/you-got-mail/image.gif")
+          .card__overlay
+            .card__overlay-title You got mail
+
+        .card(onclick="play(15, 15000)")
+          .card__giphy.card__giphy--cover
+            img.card__giphy-gif(src="media/stakeholder-feedback/image.gif")
+          .card__overlay
+            .card__overlay-title Stakeholder Feedback
+
+        .card(onclick="play(14, 4000)")
+          .card__giphy
+            img.card__giphy-gif(src="media/lean-organisation/image.gif")
+          .card__overlay
+            .card__overlay-title Lean Organisation
+
         .card(onclick="play()")
           .card__giphy.card__giphy--iframe
             iframe.card__giphy-gif(src="https://giphy.com/embed/aaQnKy1z8f1S" width="100%" height="100%" frameBorder="0")
           .card__overlay
             .card__overlay-title Rebranding
-
-        .card(onclick="play()")
-          .card__giphy.card__giphy--iframe
-            iframe.card__giphy-gif(src="https://giphy.com/embed/Z21HJj2kz9uBG" width="100%" height="100%" frameBorder="0")
-          .card__overlay
-            .card__overlay-title Love
 
     .audio-samples
       audio(preload="auto")#1
@@ -106,4 +142,17 @@ html(lang='en')
         source(src="media/you-got-mail/sound.mp3")
       audio(preload="auto")#9
         source(src="media/you-up/sound.mp3")
-        
+      audio(preload="auto")#10
+        source(src="media/manager-fail/sound.mp3")
+      audio(preload="auto")#11
+        source(src="media/because-i-can/sound.mp3")
+      audio(preload="auto")#12
+        source(src="media/manager-request/sound.mp3")
+      audio(preload="auto")#13
+        source(src="media/manager-douchebag/sound.mp3")
+      audio(preload="auto")#14
+        source(src="media/lean-organisation/sound.mp3")
+      audio(preload="auto")#15
+        source(src="media/stakeholder-feedback/sound.mp3")
+      audio(preload="auto")#16
+        source(src="media/when-someone-farts-in-the-office/sound.mp3")
