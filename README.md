@@ -34,5 +34,6 @@ more ideas
 - [ ] set timing for DLS animation, 5s loop, then on hover
 - [ ] click on an already playing gif stops it and the music
 - [ ] prefetching of audio files (remove delay on mobile usage)
+- [ ] font loading optimization (FOIT)
 - [ ] send custom analytics
 - [ ] manifest, meta & theme-color
