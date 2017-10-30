@@ -15,8 +15,7 @@ what there is still to do
 - [x] adjust object-fit of giphys (centering)
 - [x] replace font, add ~nice~ typography
 - [x] update branding (credits, press-me)
-- [ ] add DLS infographic
-- [ ] (set timing for DLS animation, 5s loop, then on hover)
+- [x] add DLS infographic
 - [ ] loading indicator for mobile (listen to canplaythrough & ended events)
 - [ ] favicon
 
@@ -31,6 +30,9 @@ more ideas
 - [ ] add proper JS build process
 - [ ] migrate to (p)react
 - [ ] randomization of images
+- [ ] special effect when hovering/clicking DLS
+- [ ] set timing for DLS animation, 5s loop, then on hover
+- [ ] click on an already playing gif stops it and the music
 - [ ] prefetching of audio files (remove delay on mobile usage)
 - [ ] send custom analytics
 - [ ] manifest, meta & theme-color
