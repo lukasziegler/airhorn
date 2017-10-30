@@ -17,13 +17,12 @@ what there is still to do
 - [x] update branding (credits, press-me)
 - [x] add DLS infographic
 - [ ] loading indicator for mobile (listen to canplaythrough & ended events)
-- [ ] favicon
 
 dependencies from others
 
 - [x] define font family
 - [x] finalize text
-- [ ] convert mp3s
+- [x] convert mp3s
 
 more ideas
 
@@ -36,4 +35,4 @@ more ideas
 - [ ] prefetching of audio files (remove delay on mobile usage)
 - [ ] font loading optimization (FOIT)
 - [ ] send custom analytics
-- [ ] manifest, meta & theme-color
+- [ ] favicon, manifest, meta & theme-color
