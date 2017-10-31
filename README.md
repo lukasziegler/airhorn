@@ -1,21 +1,51 @@
-# project airhorn
+# Project Airhorn
+
+In memory of all the wonderful times we had with beloved Philipp Doms at Red Bull Media House.
+
+Good night sweet prince.
+
+---
+
+## Contributions
+
+created by
+
+* Philipp Hieslmair
+* Lukas Ziegler
+
+with audio contributions from
+
+* Niki Guttmann
+* Manuel Gutjahr
+* Iris Dagci
+* Wolfgang Schmirl
+* George Giannoulis
+* Esa Hiltunen
+* Stavros Vougioukas
+* Antonio Librada
+* and many more
+
+Red Bull Media House 2017
+
+---
+
+## Checklist
 
 what there is still to do
 
 - [x] base layout
 - [x] giphy integration
-- [x] giphy integration (with hover or on click)
 - [x] change cards to fixed aspect ratio (flex-basis)
-- [x] split style files
-- [x] change tablet to single-column, and side-by-side view only on desktop
-- [x] CNAME
-- [x] JS logic (play audio clip for N seconds)
+- [x] split styles
+- [x] change layout: side-by-side on desktop and single-column on tablet and below
+- [x] add CNAME
+- [x] add basic JS logic, play clip for N seconds
 - [x] show giphy on click
-- [x] add actual files
-- [x] adjust object-fit of giphys (centering)
+- [x] adjust object-fit of images
 - [x] replace font, add ~nice~ typography
 - [x] update branding (credits, press-me)
 - [x] add DLS infographic
+- [x] add actual sound files + gifs
 - [ ] loading indicator for mobile (listen to canplaythrough & ended events)
 
 dependencies from others
