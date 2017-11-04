@@ -1,6 +1,6 @@
 # Project Airhorn
 
-In memory of all the wonderful times we had with beloved Philipp Doms at Red Bull Media House.
+In memory of the wonderful times we had with beloved Philipp Doms at Red Bull Media House.
 
 All the best for your new adventures!
 
@@ -44,7 +44,7 @@ what there is still to do
 - [x] update branding (credits, press-me)
 - [x] add DLS infographic
 - [x] add actual sound files + gifs
-- [ ] loading indicator for mobile (listen to canplaythrough & ended events)
+- [x] loading indicator for mobile (listen to canplaythrough & ended events)
 
 dependencies from others
 
@@ -54,13 +54,12 @@ dependencies from others
 
 more ideas
 
+- [ ] click on an already playing gif stops it and the music
+- [ ] favicon, manifest, meta & theme-color
+- [ ] send custom analytics
 - [ ] add proper JS build process
 - [ ] migrate to (p)react
 - [ ] randomization of images
 - [ ] special effect when hovering/clicking DLS
 - [ ] set timing for DLS animation, 5s loop, then on hover
-- [ ] click on an already playing gif stops it and the music
-- [ ] prefetching of audio files (remove delay on mobile usage)
 - [ ] font loading optimization (FOIT)
-- [ ] send custom analytics
-- [ ] favicon, manifest, meta & theme-color
