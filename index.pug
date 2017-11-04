@@ -8,6 +8,14 @@ html(lang='en')
       include ./docs/styles.css
     link(rel='stylesheet', href='styles.css')
     script(src='js/index.js')
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-108949745-1")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-10 8949745-1');
   body
     header.header.l-left-column
       img.header__logo(src="media/dls-hover.gif")
@@ -365,10 +373,3 @@ html(lang='en')
         source(src="media/keynote/sound.mp3")
       audio(preload="auto")#44
         source(src="media/never-forget/sound.mp3")
-
-    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-108949745-1")
-    script.
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-10 8949745-1');

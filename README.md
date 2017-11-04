@@ -2,7 +2,7 @@
 
 In memory of all the wonderful times we had with beloved Philipp Doms at Red Bull Media House.
 
-Good night sweet prince.
+All the best for your new adventures!
 
 ---
 
@@ -24,8 +24,6 @@ with audio contributions from
 * Stavros Vougioukas
 * Antonio Librada
 * and many more
-
-Red Bull Media House 2017
 
 ---
 
