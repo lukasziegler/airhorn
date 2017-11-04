@@ -1,22 +1,21 @@
-function start (id) {
-    if (id === undefined) {
-        return;
-    }
-
-    var audioEl = document.getElementById(id);
+function start () {
     var cardEl = event.currentTarget;
+    var audioEl = cardEl.getElementsByTagName('audio')[0];
+    var videoEl = cardEl.getElementsByTagName('video')[0];
 
     if (audioEl.readyState === 4) {
         play();
     } else {
         cardEl.classList.add('card--loading');
         audioEl.load();
-        audioEl.addEventListener('canplaythrough', clipLoadedCallback);
+        videoEl.load();
+        videoEl.addEventListener('canplaythrough', clipLoadedCallback);
     }
 
     function play() {
         audioEl.addEventListener('ended', clipEndedCallback);
         audioEl.play();
+        videoEl.play();
         cardEl.classList.add('card--show-giphy');
     }
 
