@@ -1,16 +1,16 @@
-function play (id, duration) {
-    if (duration === undefined) {
-        duration = 3000;
+function start (id) {
+    if (id === undefined) {
+        return;
     }
 
+    var audioEl = document.getElementById(id);
     var cardEl = event.currentTarget;
-    if (id !== undefined) {
-        var audioEl = document.getElementById(id);
-        audioEl.play();
-    }
 
+    audioEl.addEventListener('ended', clipEndedCallback);
+    audioEl.play();
     cardEl.classList.add('card--show-giphy');
-    setTimeout(function () {
+
+    function clipEndedCallback() {
         cardEl.classList.remove('card--show-giphy');
-    }, duration);
+    }
 }
