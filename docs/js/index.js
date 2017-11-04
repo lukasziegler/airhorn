@@ -3,8 +3,17 @@ function start (id) {
         return;
     }
 
-    var audioEl = document.getElementById(id);
     var cardEl = event.currentTarget;
+    var audioEl = document.getElementById(id);
+    var isPlaying = false;
+
+    console.log('isPlaying', isPlaying);
+
+    if (isPlaying) {
+        audioEl.pause();
+        console.log('pause clip');
+        return;
+    }
 
     if (audioEl.readyState === 4) {
         play();
@@ -16,8 +25,12 @@ function start (id) {
 
     function play() {
         audioEl.addEventListener('ended', clipEndedCallback);
+        isPlaying = true;
         audioEl.play();
         cardEl.classList.add('card--show-giphy');
+
+        console.log('play(): isPlaying', isPlaying);
+
     }
 
     function clipLoadedCallback() {
@@ -27,5 +40,9 @@ function start (id) {
 
     function clipEndedCallback() {
         cardEl.classList.remove('card--show-giphy');
+        isPlaying = false;
+
+        console.log('ended(): isPlaying', isPlaying);
+
     }
 }
