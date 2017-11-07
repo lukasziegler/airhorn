@@ -1,4 +1,4 @@
-function start () {
+function start (event) {
     var cardEl = event.currentTarget;
     var audioEl = cardEl.getElementsByTagName('audio')[0];
     var videoEl = cardEl.getElementsByTagName('video')[0];
