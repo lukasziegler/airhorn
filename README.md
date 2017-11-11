@@ -54,12 +54,11 @@ dependencies from others
 
 more ideas
 
+- [x] add JS build process
 - [ ] click on an already playing gif stops it and the music
 - [ ] favicon, manifest, meta & theme-color
 - [ ] send custom analytics
-- [ ] add proper JS build process
 - [ ] migrate to (p)react
 - [ ] randomization of images
 - [ ] special effect when hovering/clicking DLS
-- [ ] set timing for DLS animation, 5s loop, then on hover
 - [ ] font loading optimization (FOIT)

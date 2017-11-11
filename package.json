@@ -14,11 +14,13 @@
   },
   "homepage": "http://www.lukasziegler.com",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.18.5",
     "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
     "gulp-htmlmin": "^3.0.0",
     "gulp-pug": "^3.3.0",
-    "gulp-sourcemaps": "^1.9.1",
     "gulp-stylus": "^2.6.0",
     "rupture": "^0.6.2",
     "stylus": "^0.54.5"

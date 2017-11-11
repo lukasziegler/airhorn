@@ -1,5 +1,3 @@
-'use strict';
-
 function start(event) {
     var cardEl = event.currentTarget;
     var audioEl = cardEl.getElementsByTagName('audio')[0];
